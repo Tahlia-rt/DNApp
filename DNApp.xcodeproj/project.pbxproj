@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F4E494A1B7A7CDA00ED8ACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E49491B7A7CDA00ED8ACD /* AppDelegate.swift */; };
+		6F4E494C1B7A7CDA00ED8ACD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E494B1B7A7CDA00ED8ACD /* ViewController.swift */; };
+		6F4E494F1B7A7CDA00ED8ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4E494D1B7A7CDA00ED8ACD /* Main.storyboard */; };
+		6F4E49521B7A7CDA00ED8ACD /* DNApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E49501B7A7CDA00ED8ACD /* DNApp.xcdatamodeld */; };
+		6F4E49541B7A7CDA00ED8ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F4E49531B7A7CDA00ED8ACD /* Assets.xcassets */; };
+		6F4E49571B7A7CDA00ED8ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4E49551B7A7CDA00ED8ACD /* LaunchScreen.storyboard */; };
+		6F4E49621B7A7CDA00ED8ACD /* DNAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E49611B7A7CDA00ED8ACD /* DNAppTests.swift */; };
+		6F4E496D1B7A7CDA00ED8ACD /* DNAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E496C1B7A7CDA00ED8ACD /* DNAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F4E495E1B7A7CDA00ED8ACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F4E493E1B7A7CDA00ED8ACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F4E49451B7A7CDA00ED8ACD;
+			remoteInfo = DNApp;
+		};
+		6F4E49691B7A7CDA00ED8ACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F4E493E1B7A7CDA00ED8ACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F4E49451B7A7CDA00ED8ACD;
+			remoteInfo = DNApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F4E49461B7A7CDA00ED8ACD /* DNApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4E49491B7A7CDA00ED8ACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F4E494B1B7A7CDA00ED8ACD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F4E494E1B7A7CDA00ED8ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F4E49511B7A7CDA00ED8ACD /* DNApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DNApp.xcdatamodel; sourceTree = "<group>"; };
+		6F4E49531B7A7CDA00ED8ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F4E49561B7A7CDA00ED8ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F4E49581B7A7CDA00ED8ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F4E495D1B7A7CDA00ED8ACD /* DNAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4E49611B7A7CDA00ED8ACD /* DNAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNAppTests.swift; sourceTree = "<group>"; };
+		6F4E49631B7A7CDA00ED8ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F4E49681B7A7CDA00ED8ACD /* DNAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4E496C1B7A7CDA00ED8ACD /* DNAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNAppUITests.swift; sourceTree = "<group>"; };
+		6F4E496E1B7A7CDA00ED8ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F4E49431B7A7CDA00ED8ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F4E495A1B7A7CDA00ED8ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F4E49651B7A7CDA00ED8ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F4E493D1B7A7CDA00ED8ACD = {
+			isa = PBXGroup;
+			children = (
+				6F4E49481B7A7CDA00ED8ACD /* DNApp */,
+				6F4E49601B7A7CDA00ED8ACD /* DNAppTests */,
+				6F4E496B1B7A7CDA00ED8ACD /* DNAppUITests */,
+				6F4E49471B7A7CDA00ED8ACD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F4E49471B7A7CDA00ED8ACD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F4E49461B7A7CDA00ED8ACD /* DNApp.app */,
+				6F4E495D1B7A7CDA00ED8ACD /* DNAppTests.xctest */,
+				6F4E49681B7A7CDA00ED8ACD /* DNAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F4E49481B7A7CDA00ED8ACD /* DNApp */ = {
+			isa = PBXGroup;
+			children = (
+				6F4E49491B7A7CDA00ED8ACD /* AppDelegate.swift */,
+				6F4E494B1B7A7CDA00ED8ACD /* ViewController.swift */,
+				6F4E494D1B7A7CDA00ED8ACD /* Main.storyboard */,
+				6F4E49531B7A7CDA00ED8ACD /* Assets.xcassets */,
+				6F4E49551B7A7CDA00ED8ACD /* LaunchScreen.storyboard */,
+				6F4E49581B7A7CDA00ED8ACD /* Info.plist */,
+				6F4E49501B7A7CDA00ED8ACD /* DNApp.xcdatamodeld */,
+			);
+			path = DNApp;
+			sourceTree = "<group>";
+		};
+		6F4E49601B7A7CDA00ED8ACD /* DNAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F4E49611B7A7CDA00ED8ACD /* DNAppTests.swift */,
+				6F4E49631B7A7CDA00ED8ACD /* Info.plist */,
+			);
+			path = DNAppTests;
+			sourceTree = "<group>";
+		};
+		6F4E496B1B7A7CDA00ED8ACD /* DNAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F4E496C1B7A7CDA00ED8ACD /* DNAppUITests.swift */,
+				6F4E496E1B7A7CDA00ED8ACD /* Info.plist */,
+			);
+			path = DNAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F4E49451B7A7CDA00ED8ACD /* DNApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F4E49711B7A7CDA00ED8ACD /* Build configuration list for PBXNativeTarget "DNApp" */;
+			buildPhases = (
+				6F4E49421B7A7CDA00ED8ACD /* Sources */,
+				6F4E49431B7A7CDA00ED8ACD /* Frameworks */,
+				6F4E49441B7A7CDA00ED8ACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DNApp;
+			productName = DNApp;
+			productReference = 6F4E49461B7A7CDA00ED8ACD /* DNApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F4E495C1B7A7CDA00ED8ACD /* DNAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F4E49741B7A7CDA00ED8ACD /* Build configuration list for PBXNativeTarget "DNAppTests" */;
+			buildPhases = (
+				6F4E49591B7A7CDA00ED8ACD /* Sources */,
+				6F4E495A1B7A7CDA00ED8ACD /* Frameworks */,
+				6F4E495B1B7A7CDA00ED8ACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F4E495F1B7A7CDA00ED8ACD /* PBXTargetDependency */,
+			);
+			name = DNAppTests;
+			productName = DNAppTests;
+			productReference = 6F4E495D1B7A7CDA00ED8ACD /* DNAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F4E49671B7A7CDA00ED8ACD /* DNAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F4E49771B7A7CDA00ED8ACD /* Build configuration list for PBXNativeTarget "DNAppUITests" */;
+			buildPhases = (
+				6F4E49641B7A7CDA00ED8ACD /* Sources */,
+				6F4E49651B7A7CDA00ED8ACD /* Frameworks */,
+				6F4E49661B7A7CDA00ED8ACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F4E496A1B7A7CDA00ED8ACD /* PBXTargetDependency */,
+			);
+			name = DNAppUITests;
+			productName = DNAppUITests;
+			productReference = 6F4E49681B7A7CDA00ED8ACD /* DNAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F4E493E1B7A7CDA00ED8ACD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Karlis Berzins";
+				TargetAttributes = {
+					6F4E49451B7A7CDA00ED8ACD = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = DX3TWD8RW8;
+					};
+					6F4E495C1B7A7CDA00ED8ACD = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 6F4E49451B7A7CDA00ED8ACD;
+					};
+					6F4E49671B7A7CDA00ED8ACD = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 6F4E49451B7A7CDA00ED8ACD;
+					};
+				};
+			};
+			buildConfigurationList = 6F4E49411B7A7CDA00ED8ACD /* Build configuration list for PBXProject "DNApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F4E493D1B7A7CDA00ED8ACD;
+			productRefGroup = 6F4E49471B7A7CDA00ED8ACD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F4E49451B7A7CDA00ED8ACD /* DNApp */,
+				6F4E495C1B7A7CDA00ED8ACD /* DNAppTests */,
+				6F4E49671B7A7CDA00ED8ACD /* DNAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F4E49441B7A7CDA00ED8ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4E49571B7A7CDA00ED8ACD /* LaunchScreen.storyboard in Resources */,
+				6F4E49541B7A7CDA00ED8ACD /* Assets.xcassets in Resources */,
+				6F4E494F1B7A7CDA00ED8ACD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F4E495B1B7A7CDA00ED8ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F4E49661B7A7CDA00ED8ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F4E49421B7A7CDA00ED8ACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4E494C1B7A7CDA00ED8ACD /* ViewController.swift in Sources */,
+				6F4E49521B7A7CDA00ED8ACD /* DNApp.xcdatamodeld in Sources */,
+				6F4E494A1B7A7CDA00ED8ACD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F4E49591B7A7CDA00ED8ACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4E49621B7A7CDA00ED8ACD /* DNAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F4E49641B7A7CDA00ED8ACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4E496D1B7A7CDA00ED8ACD /* DNAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F4E495F1B7A7CDA00ED8ACD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F4E49451B7A7CDA00ED8ACD /* DNApp */;
+			targetProxy = 6F4E495E1B7A7CDA00ED8ACD /* PBXContainerItemProxy */;
+		};
+		6F4E496A1B7A7CDA00ED8ACD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F4E49451B7A7CDA00ED8ACD /* DNApp */;
+			targetProxy = 6F4E49691B7A7CDA00ED8ACD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F4E494D1B7A7CDA00ED8ACD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F4E494E1B7A7CDA00ED8ACD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F4E49551B7A7CDA00ED8ACD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F4E49561B7A7CDA00ED8ACD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F4E496F1B7A7CDA00ED8ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F4E49701B7A7CDA00ED8ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F4E49721B7A7CDA00ED8ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DNApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = karlis.learning.DNApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6F4E49731B7A7CDA00ED8ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DNApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = karlis.learning.DNApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6F4E49751B7A7CDA00ED8ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DNAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = karlis.learning.DNAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DNApp.app/DNApp";
+			};
+			name = Debug;
+		};
+		6F4E49761B7A7CDA00ED8ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DNAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = karlis.learning.DNAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DNApp.app/DNApp";
+			};
+			name = Release;
+		};
+		6F4E49781B7A7CDA00ED8ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DNAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = karlis.learning.DNAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DNApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6F4E49791B7A7CDA00ED8ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DNAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = karlis.learning.DNAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DNApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F4E49411B7A7CDA00ED8ACD /* Build configuration list for PBXProject "DNApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F4E496F1B7A7CDA00ED8ACD /* Debug */,
+				6F4E49701B7A7CDA00ED8ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F4E49711B7A7CDA00ED8ACD /* Build configuration list for PBXNativeTarget "DNApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F4E49721B7A7CDA00ED8ACD /* Debug */,
+				6F4E49731B7A7CDA00ED8ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6F4E49741B7A7CDA00ED8ACD /* Build configuration list for PBXNativeTarget "DNAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F4E49751B7A7CDA00ED8ACD /* Debug */,
+				6F4E49761B7A7CDA00ED8ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6F4E49771B7A7CDA00ED8ACD /* Build configuration list for PBXNativeTarget "DNAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F4E49781B7A7CDA00ED8ACD /* Debug */,
+				6F4E49791B7A7CDA00ED8ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6F4E49501B7A7CDA00ED8ACD /* DNApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6F4E49511B7A7CDA00ED8ACD /* DNApp.xcdatamodel */,
+			);
+			currentVersion = 6F4E49511B7A7CDA00ED8ACD /* DNApp.xcdatamodel */;
+			path = DNApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6F4E493E1B7A7CDA00ED8ACD /* Project object */;
+}
