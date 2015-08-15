@@ -157,10 +157,10 @@
             </objects>
             <point key="canvasLocation" x="-516" y="1048"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="kaH-59-zmQ">
             <objects>
-                <viewController id="BQf-pg-LJ7" sceneMemberID="viewController">
+                <viewController id="BQf-pg-LJ7" customClass="LoginViewController" customModule="DNApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="StF-CN-I4x"/>
                         <viewControllerLayoutGuide type="bottom" id="DVp-PZ-G2g"/>
@@ -245,6 +245,9 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonDidTouch:" destination="BQf-pg-LJ7" eventType="touchUpInside" id="YCV-eI-iiP"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiD-UC-kGH">
                                         <rect key="frame" x="100" y="25" width="80" height="28"/>
@@ -299,6 +302,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="dialogView" destination="MYe-k3-OYa" id="UG7-v9-5gi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tKU-OJ-Tcq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="jmI-Xw-SCl" userLabel="Exit" sceneMemberID="exit"/>
