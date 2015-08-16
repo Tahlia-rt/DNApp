@@ -47,10 +47,10 @@ public class SpringView: UIView, Springable {
         super.awakeFromNib()
         self.spring.customAwakeFromNib()
     }
-
-    public override func layoutSubviews() {
-        super.layoutSubviews()
-        spring.customLayoutSubviews()
+    
+    override public func didMoveToWindow() {
+        super.didMoveToWindow()
+        self.spring.customDidMoveToWindow()
     }
     
     public func animate() {
