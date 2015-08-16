@@ -16,6 +16,7 @@
 		6F4E49621B7A7CDA00ED8ACD /* DNAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E49611B7A7CDA00ED8ACD /* DNAppTests.swift */; };
 		6F4E496D1B7A7CDA00ED8ACD /* DNAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E496C1B7A7CDA00ED8ACD /* DNAppUITests.swift */; };
 		6F8AC40B1B7FC2F0004D345F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8AC40A1B7FC2F0004D345F /* LoginViewController.swift */; };
+		6F8B28551B809F16009E5D12 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8B28541B809F16009E5D12 /* LearnViewController.swift */; };
 		6FAF884B1B7BC6DD00244D76 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAF882D1B7BC6DC00244D76 /* AsyncButton.swift */; };
 		6FAF884C1B7BC6DD00244D76 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAF882E1B7BC6DC00244D76 /* AsyncImageView.swift */; };
 		6FAF884D1B7BC6DD00244D76 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAF882F1B7BC6DC00244D76 /* AutoTextView.swift */; };
@@ -80,6 +81,7 @@
 		6F4E496C1B7A7CDA00ED8ACD /* DNAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNAppUITests.swift; sourceTree = "<group>"; };
 		6F4E496E1B7A7CDA00ED8ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F8AC40A1B7FC2F0004D345F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6F8B28541B809F16009E5D12 /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		6FAF882D1B7BC6DC00244D76 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		6FAF882E1B7BC6DC00244D76 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		6FAF882F1B7BC6DC00244D76 /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		6F8AC4091B7FC240004D345F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6F8B28541B809F16009E5D12 /* LearnViewController.swift */,
 				6F4E494B1B7A7CDA00ED8ACD /* ViewController.swift */,
 				6F8AC40A1B7FC2F0004D345F /* LoginViewController.swift */,
 			);
@@ -374,6 +377,7 @@
 				6FAF884D1B7BC6DD00244D76 /* AutoTextView.swift in Sources */,
 				6FAF88561B7BC6DD00244D76 /* ImageLoader.swift in Sources */,
 				6FAF885B1B7BC6DD00244D76 /* Misc.swift in Sources */,
+				6F8B28551B809F16009E5D12 /* LearnViewController.swift in Sources */,
 				6FAF884E1B7BC6DD00244D76 /* BlurView.swift in Sources */,
 				6FAF88671B7BC6DD00244D76 /* UnwindSegue.swift in Sources */,
 				6FAF88591B7BC6DD00244D76 /* LoadingView.swift in Sources */,
