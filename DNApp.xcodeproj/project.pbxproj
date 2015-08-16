@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F1B3C401B80D6C900E03979 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B3C3F1B80D6C900E03979 /* MenuViewController.swift */; };
+		6F1B3C421B80D74F00E03979 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B3C411B80D74F00E03979 /* WebViewController.swift */; };
 		6F4E494A1B7A7CDA00ED8ACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E49491B7A7CDA00ED8ACD /* AppDelegate.swift */; };
-		6F4E494C1B7A7CDA00ED8ACD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E494B1B7A7CDA00ED8ACD /* ViewController.swift */; };
 		6F4E494F1B7A7CDA00ED8ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4E494D1B7A7CDA00ED8ACD /* Main.storyboard */; };
 		6F4E49521B7A7CDA00ED8ACD /* DNApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E49501B7A7CDA00ED8ACD /* DNApp.xcdatamodeld */; };
 		6F4E49541B7A7CDA00ED8ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F4E49531B7A7CDA00ED8ACD /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		6F8B288F1B80BAB7009E5D12 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8B28721B80BAB7009E5D12 /* TransitionManager.swift */; };
 		6F8B28901B80BAB7009E5D12 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8B28731B80BAB7009E5D12 /* TransitionZoom.swift */; };
 		6F8B28911B80BAB7009E5D12 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8B28741B80BAB7009E5D12 /* UnwindSegue.swift */; };
+		6FA51EBE1B80CAB8003D2FE1 /* StoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA51EBD1B80CAB8003D2FE1 /* StoriesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,9 +68,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F1B3C3F1B80D6C900E03979 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		6F1B3C411B80D74F00E03979 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		6F4E49461B7A7CDA00ED8ACD /* DNApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F4E49491B7A7CDA00ED8ACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6F4E494B1B7A7CDA00ED8ACD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6F4E494E1B7A7CDA00ED8ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F4E49511B7A7CDA00ED8ACD /* DNApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DNApp.xcdatamodel; sourceTree = "<group>"; };
 		6F4E49531B7A7CDA00ED8ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,6 +115,7 @@
 		6F8B28721B80BAB7009E5D12 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		6F8B28731B80BAB7009E5D12 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		6F8B28741B80BAB7009E5D12 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		6FA51EBD1B80CAB8003D2FE1 /* StoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,8 +199,10 @@
 		6F8AC4091B7FC240004D345F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6F1B3C3F1B80D6C900E03979 /* MenuViewController.swift */,
+				6F1B3C411B80D74F00E03979 /* WebViewController.swift */,
+				6FA51EBD1B80CAB8003D2FE1 /* StoriesTableViewController.swift */,
 				6F8B28541B809F16009E5D12 /* LearnViewController.swift */,
-				6F4E494B1B7A7CDA00ED8ACD /* ViewController.swift */,
 				6F8AC40A1B7FC2F0004D345F /* LoginViewController.swift */,
 			);
 			name = Controllers;
@@ -376,7 +382,7 @@
 				6F8B28861B80BAB7009E5D12 /* SoundPlayer.swift in Sources */,
 				6F8B287A1B80BAB7009E5D12 /* DesignableImageView.swift in Sources */,
 				6F8B288C1B80BAB7009E5D12 /* SpringTextField.swift in Sources */,
-				6F4E494C1B7A7CDA00ED8ACD /* ViewController.swift in Sources */,
+				6F1B3C401B80D6C900E03979 /* MenuViewController.swift in Sources */,
 				6F8B287D1B80BAB7009E5D12 /* DesignableTextField.swift in Sources */,
 				6F8B288F1B80BAB7009E5D12 /* TransitionManager.swift in Sources */,
 				6F8B28881B80BAB7009E5D12 /* SpringAnimation.swift in Sources */,
@@ -395,11 +401,13 @@
 				6F8B28851B80BAB7009E5D12 /* Misc.swift in Sources */,
 				6F8B287C1B80BAB7009E5D12 /* DesignableTabBarController.swift in Sources */,
 				6F8B28771B80BAB7009E5D12 /* AutoTextView.swift in Sources */,
+				6FA51EBE1B80CAB8003D2FE1 /* StoriesTableViewController.swift in Sources */,
 				6F8B287E1B80BAB7009E5D12 /* DesignableTextView.swift in Sources */,
 				6F8B28871B80BAB7009E5D12 /* Spring.swift in Sources */,
 				6F8B28891B80BAB7009E5D12 /* SpringButton.swift in Sources */,
 				6F8B28911B80BAB7009E5D12 /* UnwindSegue.swift in Sources */,
 				6F8B287B1B80BAB7009E5D12 /* DesignableLabel.swift in Sources */,
+				6F1B3C421B80D74F00E03979 /* WebViewController.swift in Sources */,
 				6F8B288A1B80BAB7009E5D12 /* SpringImageView.swift in Sources */,
 				6F8B28831B80BAB7009E5D12 /* LoadingView.swift in Sources */,
 				6F8B288D1B80BAB7009E5D12 /* SpringTextView.swift in Sources */,
