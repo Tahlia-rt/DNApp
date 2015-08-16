@@ -160,7 +160,7 @@
                         <segue destination="BQf-pg-LJ7" kind="presentation" identifier="LoginSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="lFa-lj-YKz"/>
                         <segue destination="e22-Se-qcu" kind="presentation" identifier="MenuSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="XmS-bo-cw0"/>
                         <segue destination="2PU-Cq-59W" kind="presentation" identifier="WebSegue" modalPresentationStyle="overCurrentContext" id="kFP-xa-H68"/>
-                        <segue destination="mX9-7v-uaF" kind="show" identifier="commentsSegue" id="LUW-iW-i0N"/>
+                        <segue destination="mX9-7v-uaF" kind="show" identifier="CommentsSegue" id="LUW-iW-i0N"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LzM-Ss-8n4" userLabel="First Responder" sceneMemberID="firstResponder"/>

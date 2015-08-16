@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StoriesTableViewController: UITableViewController {
+class StoriesTableViewController: UITableViewController, StoryTableViewCellDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +44,8 @@ class StoriesTableViewController: UITableViewController {
         cell.upvoteButton.setTitle("59", forState: .Normal)
         cell.commentButton.setTitle("32", forState: .Normal)
 
+        cell.delegate = self
+
         return cell
     }
 
@@ -54,5 +56,15 @@ class StoriesTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UIView(frame: CGRectZero)
+    }
+
+// MARK: StoryTableViewCellDelegate
+
+    func storyTableViewCellDidTouchUpvote(cell: StoryTableViewCell, sender: AnyObject) {
+        // TODO: Implement Upvote
+    }
+
+    func storyTableViewCellDidTouchComment(cell: StoryTableViewCell, sender: AnyObject) {
+        performSegueWithIdentifier("CommentsSegue", sender: self)
     }
 }
