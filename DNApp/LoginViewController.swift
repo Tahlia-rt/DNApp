@@ -27,5 +27,7 @@ class LoginViewController: UIViewController {
 
     @IBAction func closeButtonDidTouch(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
+        dialogView.animation = "zoomOut"
+        dialogView.animate()
     }
 }
