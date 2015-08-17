@@ -21,6 +21,8 @@ class LearnViewController: UIViewController {
     @IBAction func learnButtonDidTouch(sender: AnyObject) {
         bookImageView.animation = "pop"
         bookImageView.animate()
+
+        openURL("http://designcode.io")
     }
 
     @IBAction func closeButtonDidTouch(sender: AnyObject) {
@@ -28,5 +30,14 @@ class LearnViewController: UIViewController {
         dialogView.animateNext {
             self.dismissViewControllerAnimated(true, completion: nil)
         }
+    }
+
+    @IBAction func twitterButtonDidTouch(sender: AnyObject) {
+        openURL("http://twitter.con/MengTo")
+    }
+
+    func openURL(url: String) {
+        let targetUrl = NSURL(string: url)!
+        UIApplication.sharedApplication().openURL(targetUrl)
     }
 }

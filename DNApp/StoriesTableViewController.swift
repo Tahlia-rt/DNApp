@@ -10,6 +10,8 @@ import UIKit
 
 class StoriesTableViewController: UITableViewController, StoryTableViewCellDelegate {
 
+    let transitionManager = TransitionManager()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,7 +47,7 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("WebSegue", sender: self)
+        performSegueWithIdentifier("WebSegue", sender: indexPath)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 
@@ -70,6 +72,14 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
             let toViewController = segue.destinationViewController as! CommentsTableViewController
             let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)!
             toViewController.story = data[indexPath.row]
+        } else if segue.identifier == "WebSegue" {
+            let toViewController = segue.destinationViewController as! WebViewController
+            let indexPath = sender as! NSIndexPath
+            let url = data[indexPath.row]["url"].string!
+            toViewController.url = url
+
+            UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .Fade)
+            toViewController.transitioningDelegate = transitionManager
         }
     }
 }
