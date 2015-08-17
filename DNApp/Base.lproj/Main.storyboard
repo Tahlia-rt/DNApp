@@ -27,6 +27,11 @@
             <string>AvenirNext-Regular</string>
             <string>AvenirNext-Medium</string>
             <string>AvenirNext-Regular</string>
+            <string>AvenirNext-Regular</string>
+            <string>AvenirNext-Regular</string>
+            <string>AvenirNext-Regular</string>
+            <string>AvenirNext-Regular</string>
+            <string>AvenirNext-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -297,10 +302,105 @@
                                     <outlet property="upvoteButton" destination="zYY-rh-IOO" id="NIJ-5b-mag"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommentCell" rowHeight="119" id="RPD-jO-HJv" customClass="CommentTableViewCell" customModule="DNApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="226" width="320" height="119"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RPD-jO-HJv" id="BdG-ve-U0W">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="118.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s4v-Ar-HdT">
+                                            <rect key="frame" x="10" y="8" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="gEn-eh-3c8"/>
+                                                <constraint firstAttribute="width" constant="20" id="rya-zQ-RVA"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rem-1m-geo">
+                                            <rect key="frame" x="35" y="8" width="240" height="22"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                            <color key="textColor" red="0.58431372550000005" green="0.65098039220000004" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7h" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgf-Lo-DbF">
+                                            <rect key="frame" x="294" y="8" width="17.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                            <color key="textColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xc-Q5-WGb" customClass="SpringButton" customModule="DNApp" customModuleProvider="target">
+                                            <rect key="frame" x="25" y="33" width="70" height="33"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="33" id="REh-mT-NxL"/>
+                                                <constraint firstAttribute="width" constant="70" id="c6v-B6-Wyw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="813" image="icon-upvote">
+                                                <color key="titleColor" red="0.58431372550000005" green="0.65098039220000004" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="upvoteButtonDidTouch:" destination="RPD-jO-HJv" eventType="touchUpInside" id="KaC-om-9H3"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikl-yU-EDw" customClass="SpringButton" customModule="DNApp" customModuleProvider="target">
+                                            <rect key="frame" x="95" y="33" width="70" height="33"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="33" id="2VK-3P-wsJ"/>
+                                                <constraint firstAttribute="width" constant="70" id="WXg-Os-VA3"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" image="icon-reply">
+                                                <color key="titleColor" red="0.58431372550000005" green="0.65098039220000004" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="replyButtonDidTouch:" destination="RPD-jO-HJv" eventType="touchUpInside" id="EIX-sW-z7J"/>
+                                            </connections>
+                                        </button>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Text" translatesAutoresizingMaskIntoConstraints="NO" id="L50-rF-8cV" customClass="AutoTextView" customModule="DNApp" customModuleProvider="target">
+                                            <rect key="frame" x="35" y="69" width="270" height="38"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Rem-1m-geo" secondAttribute="trailing" constant="45" id="1Xr-kH-EMq"/>
+                                        <constraint firstAttribute="trailing" secondItem="L50-rF-8cV" secondAttribute="trailing" constant="15" id="6aE-Rk-cW4"/>
+                                        <constraint firstItem="L50-rF-8cV" firstAttribute="top" secondItem="ikl-yU-EDw" secondAttribute="bottom" constant="3" id="IfF-Yl-ZXq"/>
+                                        <constraint firstItem="Fgf-Lo-DbF" firstAttribute="top" secondItem="BdG-ve-U0W" secondAttribute="top" constant="8" id="Jnm-UO-ZjC"/>
+                                        <constraint firstItem="2Xc-Q5-WGb" firstAttribute="leading" secondItem="BdG-ve-U0W" secondAttribute="leading" constant="25" id="Xao-uN-BFd"/>
+                                        <constraint firstAttribute="bottom" secondItem="L50-rF-8cV" secondAttribute="bottom" constant="11.5" id="YfV-65-cEa"/>
+                                        <constraint firstItem="s4v-Ar-HdT" firstAttribute="top" secondItem="BdG-ve-U0W" secondAttribute="top" constant="8" id="Zn3-lT-cyT"/>
+                                        <constraint firstItem="ikl-yU-EDw" firstAttribute="top" secondItem="Rem-1m-geo" secondAttribute="bottom" constant="3" id="azw-RI-56G"/>
+                                        <constraint firstItem="Rem-1m-geo" firstAttribute="leading" secondItem="s4v-Ar-HdT" secondAttribute="trailing" constant="5" id="bMq-QH-H6B"/>
+                                        <constraint firstItem="2Xc-Q5-WGb" firstAttribute="top" secondItem="Rem-1m-geo" secondAttribute="bottom" constant="3" id="caL-B5-nSN"/>
+                                        <constraint firstItem="L50-rF-8cV" firstAttribute="leading" secondItem="BdG-ve-U0W" secondAttribute="leading" constant="35" id="fuh-r8-NiW"/>
+                                        <constraint firstItem="ikl-yU-EDw" firstAttribute="leading" secondItem="2Xc-Q5-WGb" secondAttribute="trailing" id="kGx-oS-6iO"/>
+                                        <constraint firstItem="Rem-1m-geo" firstAttribute="top" secondItem="BdG-ve-U0W" secondAttribute="top" constant="8" id="m6z-xZ-Ig9"/>
+                                        <constraint firstAttribute="trailing" secondItem="Fgf-Lo-DbF" secondAttribute="trailing" constant="8" id="xDc-Oy-fQM"/>
+                                        <constraint firstItem="s4v-Ar-HdT" firstAttribute="leading" secondItem="BdG-ve-U0W" secondAttribute="leading" constant="10" id="xLJ-GE-bxE"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="authorLabel" destination="Rem-1m-geo" id="2xH-ME-Itj"/>
+                                    <outlet property="avatarImageView" destination="s4v-Ar-HdT" id="fMx-Tl-DGZ"/>
+                                    <outlet property="commentTextView" destination="L50-rF-8cV" id="IsG-3j-mOQ"/>
+                                    <outlet property="replyButton" destination="ikl-yU-EDw" id="FmN-Ml-7K0"/>
+                                    <outlet property="timeLabel" destination="Fgf-Lo-DbF" id="m9Z-u6-vTy"/>
+                                    <outlet property="upvoteButton" destination="2Xc-Q5-WGb" id="v1v-1n-sMH"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="jz6-9F-vFD" id="Mug-zi-Nhr"/>
-                            <outlet property="delegate" destination="jz6-9F-vFD" id="Z4L-NH-dYt"/>
+                            <outlet property="dataSource" destination="jz6-9F-vFD" id="j0j-a5-UDu"/>
+                            <outlet property="delegate" destination="jz6-9F-vFD" id="EvM-k2-yRt"/>
                         </connections>
                     </tableView>
                     <connections>
@@ -832,6 +932,7 @@
         <image name="icon-hamburger" width="22" height="16"/>
         <image name="icon-mail" width="26" height="18"/>
         <image name="icon-password" width="25" height="25"/>
+        <image name="icon-reply" width="20" height="16"/>
         <image name="icon-sketch" width="64" height="61"/>
         <image name="icon-twitter" width="18" height="14"/>
         <image name="icon-upvote" width="18" height="16"/>
