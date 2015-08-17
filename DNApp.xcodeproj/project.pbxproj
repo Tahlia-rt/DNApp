@@ -17,6 +17,7 @@
 		6F4E49571B7A7CDA00ED8ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4E49551B7A7CDA00ED8ACD /* LaunchScreen.storyboard */; };
 		6F4E49621B7A7CDA00ED8ACD /* DNAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E49611B7A7CDA00ED8ACD /* DNAppTests.swift */; };
 		6F4E496D1B7A7CDA00ED8ACD /* DNAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E496C1B7A7CDA00ED8ACD /* DNAppUITests.swift */; };
+		6F682ABF1B80F7B700E8A108 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F682ABE1B80F7B700E8A108 /* Data.swift */; };
 		6F8AC40B1B7FC2F0004D345F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8AC40A1B7FC2F0004D345F /* LoginViewController.swift */; };
 		6F8B28551B809F16009E5D12 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8B28541B809F16009E5D12 /* LearnViewController.swift */; };
 		6F8B28751B80BAB7009E5D12 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8B28571B80BAB7009E5D12 /* AsyncButton.swift */; };
@@ -48,6 +49,7 @@
 		6F8B288F1B80BAB7009E5D12 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8B28721B80BAB7009E5D12 /* TransitionManager.swift */; };
 		6F8B28901B80BAB7009E5D12 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8B28731B80BAB7009E5D12 /* TransitionZoom.swift */; };
 		6F8B28911B80BAB7009E5D12 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8B28741B80BAB7009E5D12 /* UnwindSegue.swift */; };
+		6F964EBE1B824FBF0072D0B4 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F964EBD1B824FBF0072D0B4 /* CommentsTableViewController.swift */; };
 		6FA51EBE1B80CAB8003D2FE1 /* StoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA51EBD1B80CAB8003D2FE1 /* StoriesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,7 @@
 		6F4E49681B7A7CDA00ED8ACD /* DNAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F4E496C1B7A7CDA00ED8ACD /* DNAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNAppUITests.swift; sourceTree = "<group>"; };
 		6F4E496E1B7A7CDA00ED8ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F682ABE1B80F7B700E8A108 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		6F8AC40A1B7FC2F0004D345F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6F8B28541B809F16009E5D12 /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		6F8B28571B80BAB7009E5D12 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
@@ -117,6 +120,7 @@
 		6F8B28721B80BAB7009E5D12 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		6F8B28731B80BAB7009E5D12 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		6F8B28741B80BAB7009E5D12 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		6F964EBD1B824FBF0072D0B4 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
 		6FA51EBD1B80CAB8003D2FE1 /* StoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +180,7 @@
 		6F4E49481B7A7CDA00ED8ACD /* DNApp */ = {
 			isa = PBXGroup;
 			children = (
+				6F682ABD1B80F79200E8A108 /* Data files */,
 				6F1B3C431B80DCBC00E03979 /* Cells */,
 				6F8AC4091B7FC240004D345F /* Controllers */,
 				6F8B28561B80BAB7009E5D12 /* Spring */,
@@ -207,9 +212,18 @@
 			path = DNAppUITests;
 			sourceTree = "<group>";
 		};
+		6F682ABD1B80F79200E8A108 /* Data files */ = {
+			isa = PBXGroup;
+			children = (
+				6F682ABE1B80F7B700E8A108 /* Data.swift */,
+			);
+			name = "Data files";
+			sourceTree = "<group>";
+		};
 		6F8AC4091B7FC240004D345F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6F964EBD1B824FBF0072D0B4 /* CommentsTableViewController.swift */,
 				6F1B3C3F1B80D6C900E03979 /* MenuViewController.swift */,
 				6F1B3C411B80D74F00E03979 /* WebViewController.swift */,
 				6FA51EBD1B80CAB8003D2FE1 /* StoriesTableViewController.swift */,
@@ -396,11 +410,13 @@
 				6F1B3C401B80D6C900E03979 /* MenuViewController.swift in Sources */,
 				6F8B287D1B80BAB7009E5D12 /* DesignableTextField.swift in Sources */,
 				6F8B288F1B80BAB7009E5D12 /* TransitionManager.swift in Sources */,
+				6F682ABF1B80F7B700E8A108 /* Data.swift in Sources */,
 				6F8B28881B80BAB7009E5D12 /* SpringAnimation.swift in Sources */,
 				6F8B28751B80BAB7009E5D12 /* AsyncButton.swift in Sources */,
 				6F8B28821B80BAB7009E5D12 /* KeyboardLayoutConstraint.swift in Sources */,
 				6F8B28791B80BAB7009E5D12 /* DesignableButton.swift in Sources */,
 				6F8AC40B1B7FC2F0004D345F /* LoginViewController.swift in Sources */,
+				6F964EBE1B824FBF0072D0B4 /* CommentsTableViewController.swift in Sources */,
 				6F4E49521B7A7CDA00ED8ACD /* DNApp.xcdatamodeld in Sources */,
 				6F8B287F1B80BAB7009E5D12 /* DesignableView.swift in Sources */,
 				6F8B28901B80BAB7009E5D12 /* TransitionZoom.swift in Sources */,
