@@ -172,6 +172,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
                     <connections>
+                        <outlet property="loginButton" destination="rbH-AE-vQM" id="j7e-yC-6MQ"/>
                         <segue destination="BQf-pg-LJ7" kind="presentation" identifier="LoginSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="lFa-lj-YKz"/>
                         <segue destination="e22-Se-qcu" kind="presentation" identifier="MenuSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="XmS-bo-cw0"/>
                         <segue destination="2PU-Cq-59W" kind="presentation" identifier="WebSegue" id="kFP-xa-H68"/>
@@ -409,6 +410,7 @@
                     </tableView>
                     <connections>
                         <segue destination="pv6-6D-T6v" kind="presentation" identifier="ReplaySegue" id="kda-4s-tAv"/>
+                        <segue destination="BQf-pg-LJ7" kind="presentation" identifier="LoginSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="cMO-Il-1qS"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xwa-Eo-7eP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -777,7 +779,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZk-UA-ViI">
-                                        <rect key="frame" x="189" y="228" width="42" height="22"/>
+                                        <rect key="frame" x="179" y="228" width="62" height="22"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -824,6 +826,8 @@
                     </view>
                     <connections>
                         <outlet property="dialogView" destination="qWY-3t-I2K" id="vbC-w3-Xhx"/>
+                        <outlet property="loginLabel" destination="OZk-UA-ViI" id="jeq-zh-Aox"/>
+                        <segue destination="BQf-pg-LJ7" kind="presentation" identifier="LoginSegue" modalTransitionStyle="crossDissolve" id="dCy-BC-4yt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lMt-we-DVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -999,4 +1003,7 @@
         <image name="icon-xcode" width="64" height="59"/>
         <image name="input-outline" width="7" height="44"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="cMO-Il-1qS"/>
+    </inferredMetricsTieBreakers>
 </document>

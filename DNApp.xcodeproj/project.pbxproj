@@ -59,6 +59,7 @@
 		6F964EC31B8258650072D0B4 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F964EC21B8258650072D0B4 /* CommentTableViewCell.swift */; };
 		6FA51EBE1B80CAB8003D2FE1 /* StoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA51EBD1B80CAB8003D2FE1 /* StoriesTableViewController.swift */; };
 		6FB13B9A1B8A1C7C001D8557 /* DNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB13B991B8A1C7C001D8557 /* DNService.swift */; };
+		6FB13BA21B8A34B3001D8557 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB13BA11B8A34B3001D8557 /* LocalStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +198,7 @@
 		6F964EC21B8258650072D0B4 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		6FA51EBD1B80CAB8003D2FE1 /* StoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewController.swift; sourceTree = "<group>"; };
 		6FB13B991B8A1C7C001D8557 /* DNService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNService.swift; sourceTree = "<group>"; };
+		6FB13BA11B8A34B3001D8557 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +287,7 @@
 		6F4E49481B7A7CDA00ED8ACD /* DNApp */ = {
 			isa = PBXGroup;
 			children = (
+				6FB13BA01B8A34A3001D8557 /* Helpers */,
 				6FB13B941B8A1C66001D8557 /* Services */,
 				6F964EBF1B8253EF0072D0B4 /* Frameworks */,
 				6F1B3C431B80DCBC00E03979 /* Cells */,
@@ -383,6 +386,14 @@
 				6FB13B991B8A1C7C001D8557 /* DNService.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		6FB13BA01B8A34A3001D8557 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6FB13BA11B8A34B3001D8557 /* LocalStore.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -603,6 +614,7 @@
 				6F8B288A1B80BAB7009E5D12 /* SpringImageView.swift in Sources */,
 				6F964EC31B8258650072D0B4 /* CommentTableViewCell.swift in Sources */,
 				6F8B28831B80BAB7009E5D12 /* LoadingView.swift in Sources */,
+				6FB13BA21B8A34B3001D8557 /* LocalStore.swift in Sources */,
 				6F8B288D1B80BAB7009E5D12 /* SpringTextView.swift in Sources */,
 				6FB13B9A1B8A1C7C001D8557 /* DNService.swift in Sources */,
 				6F8B28761B80BAB7009E5D12 /* AsyncImageView.swift in Sources */,

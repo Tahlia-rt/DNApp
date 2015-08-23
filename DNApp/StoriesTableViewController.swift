@@ -8,20 +8,22 @@
 
 import UIKit
 
-class StoriesTableViewController: UITableViewController, StoryTableViewCellDelegate, MenuViewControllerDelegate {
+class StoriesTableViewController: UITableViewController, StoryTableViewCellDelegate, MenuViewControllerDelegate, LoginViewControllerDelegate {
 
     let transitionManager = TransitionManager()
     var stories: JSON! = []
     var isFirstTime = true
     var section = ""
+    @IBOutlet weak var loginButton: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadStories(section, page: 1)
-        refreshControl?.addTarget(self, action: "refreshStories", forControlEvents: .ValueChanged)
 
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
+
+        loadStories(section, page: 1)
+        refreshControl?.addTarget(self, action: "refreshStories", forControlEvents: .ValueChanged)
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -33,6 +35,14 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
     }
 
     func loadStories(section: String, page: Int) {
+        if LocalStore.getToken() == nil {
+            loginButton.title = "Login"
+            loginButton.enabled = true
+        } else {
+            loginButton.title = ""
+            loginButton.enabled = false
+        }
+
         DNService.storiesForSection(section, page: page) { (JSON) -> () in
             self.stories = JSON["stories"]
             self.tableView.reloadData()
@@ -43,6 +53,13 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
 
     func refreshStories() {
         loadStories(section, page: 1)
+    }
+
+// MARK: LoginViewControllerDelegate
+
+    func loginViewControllerDidLogin(controller: LoginViewController) {
+        loadStories(section, page: 1)
+        view.showLoading()
     }
 
 // MARK: MenuViewControllerDelegate
@@ -59,6 +76,11 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
         section = "recent"
         loadStories(section, page: 1)
         navigationItem.title = "Recent Stories"
+    }
+
+    func menuViewControllerDidTouchLogout(controller: MenuViewController) {
+        view.showLoading()
+        loadStories(section, page: 1)
     }
 
 // MARK: Actions
@@ -100,7 +122,20 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
 // MARK: StoryTableViewCellDelegate
 
     func storyTableViewCellDidTouchUpvote(cell: StoryTableViewCell, sender: AnyObject) {
-        // TODO: Implement Upvote
+        if let token = LocalStore.getToken() {
+            let indexPath = tableView.indexPathForCell(cell)!
+            let story = stories[indexPath.row]
+            let storyId = story["id"].int!
+
+            DNService.upvoteStoryWithId(storyId, token: token) { (successfull) -> () in
+                print("success")
+            }
+
+            LocalStore.saveUpvotedStory(storyId)
+            cell.configureWithStory(story)
+        } else {
+            performSegueWithIdentifier("LoginSegue", sender: self)
+        }
     }
 
     func storyTableViewCellDidTouchComment(cell: StoryTableViewCell, sender: AnyObject) {
@@ -124,6 +159,9 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
             toViewController.transitioningDelegate = transitionManager
         } else if segue.identifier == "MenuSegue" {
             let toViewController = segue.destinationViewController as! MenuViewController
+            toViewController.delegate = self
+        } else if segue.identifier == "LoginSegue" {
+            let toViewController = segue.destinationViewController as! LoginViewController
             toViewController.delegate = self
         }
     }

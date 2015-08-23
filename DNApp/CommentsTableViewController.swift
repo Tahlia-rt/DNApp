@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CommentsTableViewController: UITableViewController {
+class CommentsTableViewController: UITableViewController, CommentTableViewCellDelegate, StoryTableViewCellDelegate {
 
     var story: JSON!
     var comments: JSON!
@@ -34,13 +34,60 @@ class CommentsTableViewController: UITableViewController {
 
         if let storyCell = cell as? StoryTableViewCell {
             storyCell.configureWithStory(story)
+            storyCell.delegate = self
         }
 
         if let commentCell = cell as? CommentTableViewCell {
             let comment = comments[indexPath.row - 1]
             commentCell.configureWithComment(comment)
+            commentCell.delegate = self
         }
 
         return cell
+    }
+
+// MARK: CommentTableViewCellDelegate
+
+    func commentTableViewCellDidTouchUpvote(cell: CommentTableViewCell) {
+        if let token = LocalStore.getToken() {
+            let indexPath = tableView.indexPathForCell(cell)!
+            let comment = comments[indexPath.row - 1]
+            let commentId = comment["id"].int!
+
+            DNService.upvoteCommentWithId(commentId, token: token){ (successfull) -> () in
+                // Do something
+            }
+
+            LocalStore.saveUpvotedComment(commentId)
+            cell.configureWithComment(comment)
+        } else {
+            performSegueWithIdentifier("LoginSegue", sender: self)
+        }
+    }
+
+    func commentTableViewCellDidTouchComment(cell: CommentTableViewCell) {
+
+    }
+
+// MARK: StoriesTableViewCellDelegate
+
+    func storyTableViewCellDidTouchUpvote(cell: StoryTableViewCell, sender: AnyObject) {
+        if let token = LocalStore.getToken() {
+            let indexPath = tableView.indexPathForCell(cell)!
+            let storyId = story["id"].int!
+
+            DNService.upvoteStoryWithId(storyId, token: token){ (successfull) -> () in
+                // Do something
+            }
+
+            LocalStore.saveUpvotedStory(storyId)
+            cell.configureWithStory(story)
+        } else {
+            performSegueWithIdentifier("LoginSegue", sender: self)
+        }
+    }
+
+    func storyTableViewCellDidTouchComment(cell: StoryTableViewCell, sender: AnyObject) {
+
     }
 }
