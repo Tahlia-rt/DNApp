@@ -8,15 +8,57 @@
 
 import UIKit
 
-class StoriesTableViewController: UITableViewController, StoryTableViewCellDelegate {
+class StoriesTableViewController: UITableViewController, StoryTableViewCellDelegate, MenuViewControllerDelegate {
 
     let transitionManager = TransitionManager()
+    var stories: JSON! = []
+    var isFirstTime = true
+    var section = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadStories(section, page: 1)
+        refreshControl?.addTarget(self, action: "refreshStories", forControlEvents: .ValueChanged)
 
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        if isFirstTime {
+            view.showLoading()
+            isFirstTime = false
+        }
+    }
+
+    func loadStories(section: String, page: Int) {
+        DNService.storiesForSection(section, page: page) { (JSON) -> () in
+            self.stories = JSON["stories"]
+            self.tableView.reloadData()
+            self.view.hideLoading()
+            self.refreshControl?.endRefreshing()
+        }
+    }
+
+    func refreshStories() {
+        loadStories(section, page: 1)
+    }
+
+// MARK: MenuViewControllerDelegate
+
+    func menuViewControllerDidTouchTop(controller: MenuViewController) {
+        view.showLoading()
+        section = ""
+        loadStories(section, page: 1)
+        navigationItem.title = "Top Stories"
+    }
+
+    func menuViewControllerDidTouchRecent(controller: MenuViewController) {
+        view.showLoading()
+        section = "recent"
+        loadStories(section, page: 1)
+        navigationItem.title = "Recent Stories"
     }
 
 // MARK: Actions
@@ -32,13 +74,13 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
 // MARK: TableView Data Source
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return stories.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("StoryCell", forIndexPath: indexPath) as! StoryTableViewCell
 
-        let story = data[indexPath.row]
+        let story = stories[indexPath.row]
         cell.configureWithStory(story)
 
         cell.delegate = self
@@ -71,15 +113,18 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
         if segue.identifier == "CommentsSegue" {
             let toViewController = segue.destinationViewController as! CommentsTableViewController
             let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)!
-            toViewController.story = data[indexPath.row]
+            toViewController.story = stories[indexPath.row]
         } else if segue.identifier == "WebSegue" {
             let toViewController = segue.destinationViewController as! WebViewController
             let indexPath = sender as! NSIndexPath
-            let url = data[indexPath.row]["url"].string!
+            let url = stories[indexPath.row]["url"].string!
             toViewController.url = url
 
             UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .Fade)
             toViewController.transitioningDelegate = transitionManager
+        } else if segue.identifier == "MenuSegue" {
+            let toViewController = segue.destinationViewController as! MenuViewController
+            toViewController.delegate = self
         }
     }
 }
