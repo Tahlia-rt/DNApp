@@ -37,6 +37,7 @@ class StoryTableViewCell: UITableViewCell {
     }
 
     @IBAction func upvoteButtonDidTouch(sender: AnyObject) {
+        SoundPlayer.play("upvote.wav")
         upvoteButton.animation = "pop"
         upvoteButton.force = 3
         upvoteButton.animate()

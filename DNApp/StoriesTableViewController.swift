@@ -24,6 +24,8 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
 
         loadStories(section, page: 1)
         refreshControl?.addTarget(self, action: "refreshStories", forControlEvents: .ValueChanged)
+        navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Avenir Next", size: 18)!], forState: .Normal)
+        loginButton.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Avenir Next", size: 18)!], forState: .Normal)
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -52,6 +54,7 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
     }
 
     func refreshStories() {
+        SoundPlayer.play("refresh.wav")
         loadStories(section, page: 1)
     }
 

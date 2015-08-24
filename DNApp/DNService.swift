@@ -73,10 +73,47 @@ struct DNService {
         upvoteWithUrlString(urlString, token: token, response: response)
     }
 
+    static func replyStoryWithId(storyId: Int, token: String, body: String, response: (successfull: Bool) -> ()) {
+        let urlString = baseURL + ResourcePath.StoryReply(storyId: storyId).description
+        replyWithUrlString(urlString, token: token, body: body, response: response)
+    }
+
+    static func replyCommentWithId(commentId: Int, token: String, body: String, response: (successfull: Bool) -> ()) {
+        let urlString = baseURL + ResourcePath.CommentReply(commentId: commentId).description
+        replyWithUrlString(urlString, token: token, body: body, response: response)
+    }
+
+    static func storyForId(storyId: Int, response: (JSON) -> ()) {
+        let urlString = baseURL + ResourcePath.StoryId(storyId: storyId).description
+        let parameters = ["client_id": clientID]
+        Alamofire.request(.GET, urlString, parameters: parameters).responseJSON { (_, _, data) -> Void in
+            let story = JSON(data.value ?? [])
+            response(story)
+        }
+    }
+
+    // MARK: private functions
+
     private static func upvoteWithUrlString(urlString: String, token: String, response: (successfull: Bool) -> ()) {
         Alamofire.request(.POST, urlString, headers: ["Authorization": "Bearer \(token)"]).responseJSON { (_, urlResponse, _) -> Void in
             let successful = urlResponse?.statusCode == 200
             response(successfull: successful)
+        }
+    }
+
+    private static func replyWithUrlString(urlString: String, token: String, body: String, response: (successfull: Bool) -> ()) {
+        let request = NSMutableURLRequest(URL: NSURL(string: urlString)!)
+        request.HTTPMethod = "POST"
+        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        request.HTTPBody = "comment[body]=\(body)".dataUsingEncoding(NSUTF8StringEncoding)
+
+        Alamofire.request(request).responseJSON { (_, _, data) -> Void in
+            let json = JSON(data.value!)
+            if let _ = json["comment"].string {
+                response(successfull: true)
+            } else {
+                response(successfull: false)
+            }
         }
     }
 }
